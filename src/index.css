@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* Design tokens taken from the Figma file (legal/* colors, Playfair Display + Inter). */
+@theme {
+  --color-ink: #0a1530;
+  --color-navy: #0f1e3f;
+  --color-slate: #4a5468;
+  --color-muted: #8b93a5;
+  --color-line: #e2e5eb;
+  --color-mist: #eef1f6;
+  --color-cream: #f8f6f2;
+  --color-burgundy: #8b1a2b;
+  --color-burgundy-dark: #6e1220;
+  --color-blush: #f6e7e9;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-navy antialiased;
+  }
+  section[id] {
+    scroll-margin-top: 16px;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
