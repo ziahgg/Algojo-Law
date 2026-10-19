@@ -3,6 +3,8 @@
 Responsive single-page website for Algojo Law, built from the Figma design
 "Legal Services Homepage" (desktop 1440 px and mobile 390 px frames).
 
+**Live site:** https://ziahgg.github.io/Algojo-Law/
+
 Stack: Vite, React, TypeScript, Tailwind CSS v4. No backend.
 
 ## Develop
